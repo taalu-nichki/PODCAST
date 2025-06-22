@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(52, 100, 64); /* Change to any color */
+}
+.intro {text-align: center}
+
+.logo-container {text-align: center;
+    padding-right: 20px; /* Adjust spacing */
+}
+
+.logo {
+    width: 175px;  /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    margin-left: 10px; /* Adds space between logo and text */
+}
+
+.podcast-title {
+    font-family: 'Amatic SC', cursive; /* Use Amatic SC for the podcast title */
+    font-size: 2.5em; /* Adjust the size as needed */
+}
+
+/* לחלק את המסמך ל2 וכל עיצוב הקןפסאות */
+/* General Page Layout */
+body {
+    display: flex;
+    background-color: #87b184;
+    margin: 0;
+}
+
+/* Fixed Right-Side Intro */
+.intro {
+    width: 30%; /* Adjust width as needed */
+    height: 80vh; /* Adjust height if needed */
+    position: fixed;
+    top: 50%; /* Start from the center vertically */
+    left: 50%; /* Position horizontally from the center */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center it */
+    background-color: #06312b; /* Dark background */
+    color: white;
+    padding: 20px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Side - Podcast Episodes */
+.episodes {
+    width: 80%;
+    display: flex;
+    flex: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Box Styling */
+.box {
+    display: block; /* Makes the whole box clickable */
+    text-decoration: none; /* Removes default link underline */
+    color: black; /* Keeps text color normal */
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 55px; /* Keeps space from the top */
+    right: 80px; /* Keeps distance from the right edge */
+    width: 180px; /* Sidebar width */
+    height: 82vh; /* Slightly shorter than before */
+    background-color: #bbdac2c4;
+    padding: 20px;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.5); /* Glow effect */
+    border-radius: 10px;
+    z-index: 1000; /* Ensures it stays on top */
+    text-align: center; /* Centers the text and logo */
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers logo and links */
+}
+
+/* Sidebar Logo Styling */
+.sidebar-logo {
+    width: 80%; /* Slightly smaller logo */
+    height: auto;
+    margin-bottom: 15px; /* Adds space below the logo */
+    border-radius: 10px; /* Slightly rounded edges */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Adjusted spacing */
+    width: 100%; /* Makes links align properly */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centers text */
+    border-radius: 20px; /* Rounded edges for links */
+}
+
+/* Hover Effect for Links */
+.sidebar a:hover {
+    background-color: #09584160;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 25px; /* More rounded on hover */
+}
+
+/* Active Link Styling */
+.sidebar a.active {
+    background-color: #0b303aab;
+    box-shadow: 0 0 20px #19c0eeab;
+    border-radius: 25px;
+}

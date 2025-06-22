@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(52, 100, 64); /* Change to any color */
+}
+.intro {text-align: center}
+
+.logo-container {text-align: center;
+    padding-right: 20px; /* Adjust spacing */
+}
+
+.logo {
+    width: 175px;  /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    margin-left: 10px; /* Adds space between logo and text */
+}
+
+.podcast-title {
+    font-family: 'Amatic SC', cursive; /* Use Amatic SC for the podcast title */
+    font-size: 2.5em; /* Adjust the size as needed */
+}
+
+/* לחלק את המסמך ל2 וכל עיצוב הקןפסאות */
+/* General Page Layout */
+body {
+    display: flex;
+    background-color: #87b184;
+    margin: 0;
+}
+
+/* Fixed Right-Side Intro */
+.intro {
+    width: 30%; /* Adjust width as needed */
+    height: 100vh; /* Full screen height */
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #06312b; /* Dark background */
+    color: white;
+    padding: 20px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+.box1 {
+    display: block; /* Makes the whole box clickable */
+    text-decoration: none; /* Removes default link underline */
+    color: black; /* Keeps text color normal */
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    width: 30%; /* Adjust the width as needed */
+    margin: 1px auto; /* Centers the box horizontally and adds margin at the top */
+}
+
+
+/* Left Side - Podcast Episodes */
+.episodes {
+    margin-right: 35%; /* Makes space for the fixed .intro */
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* לחלק את המסמך ל2 וכל עיצוב הקןפסאות */
+
+/* Podcast Episode Boxes */
+.episodes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 20px;
+    margin-right: 35%; /* Space for the fixed intro section */
+    padding: 20px;
+}
+
+/* Box Styling */
+.box {
+    display: block; /* Makes the whole box clickable */
+    text-decoration: none; /* Removes default link underline */
+    color: black; /* Keeps text color normal */
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.box:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Offset second column for checkerboard effect */
+.offset {
+    margin-top: 40px;
+}

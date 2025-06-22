@@ -1,0 +1,201 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #76af7998;
+    text-align: right; /* Hebrew alignment */
+    
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 40px; /* Keeps space from the top */
+    right: 40px; /* Keeps distance from the right edge */
+    width: 180px; /* Sidebar width */
+    height: 80vh; /* Slightly shorter than before */
+    background-color: #bbdac2c4;
+    padding: 20px;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.5); /* Glow effect */
+    border-radius: 10px;
+    z-index: 1000; /* Ensures it stays on top */
+    text-align: center; /* Centers the text and logo */
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers logo and links */
+}
+
+/* Sidebar Logo Styling */
+.sidebar-logo {
+    width: 80%; /* Slightly smaller logo */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 15px; /* Adds space below the logo */
+    border-radius: 10px; /* Slightly rounded edges */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    color: #504b4b;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Adjusted spacing */
+    width: 100%; /* Makes links align properly */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centers text */
+    border-radius: 20px; /* Rounded edges for links */
+}
+
+/* Hover Effect for Links */
+.sidebar a:hover {
+    background-color: #0b303a60;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black; /* Change text color to black on hover */
+    border-radius: 25px; /* More rounded on hover */
+}
+
+/* Active Link Styling */
+.sidebar a.active {
+    background-color: #0b303aab;
+    box-shadow: 0 0 20px #19c0eeab;
+    color: rgb(248, 244, 244); /* Change text color to black on hover */
+    border-radius: 25px;
+}
+
+/* Fixed Bottom Bar */
+.bottom-bar {
+    position: fixed;
+    bottom: 30px; /* Floating effect */
+    width: 70%; /* Shorter than full width */
+    left: 6%; /* Centers it */
+    background-color: #06312b; /* Adjust color */
+    padding: 15px; /* Adds space inside */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Separates elements */
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Floating shadow */
+    z-index: 999; /* Ensures bottom bar is behind the sidebar */
+}
+
+/* Audio Player Styling */
+.audio-player {
+    flex-grow: 2; /* Makes the audio bar take more space */
+    margin-right: 20px; /* Space from logo */
+    height: 40px; /* Increases player height */
+    max-width: 88%; /* Ensures it doesn't take too much space */
+}
+
+/* Logo Styling in Bottom Bar */
+.logo {
+    height: 80px;
+    width: auto;
+    border-radius: 15px; /* Slightly rounded edges */
+    
+}
+
+/* Reset Margin for Audio Player and Logo */
+.bottom-bar img,
+.bottom-bar audio {
+    margin-bottom: 0;
+}
+
+
+/* Main Content Box */
+.content-box {
+    width: 60%;
+    margin: 100px auto 100px 10%; /* Shifts the box more to the left */
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text and Elements in Content Box */
+.content-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+h3 {
+    font-size: 18px;  /* Same as <p> font size */
+    line-height: 1.6;  /* Same line spacing as <p> */
+    color: #555;  /* Same text color as <p> */
+    margin-bottom: 3px;  /* Space after the <h3> */
+    text-decoration: underline;  /* Underline the text */
+    direction: rtl;
+}
+
+.content-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    direction: rtl;
+}
+
+/* fot the bullet points */
+.rtl-list {
+    direction: rtl; /* Sets right-to-left text direction */
+    text-align: right; /* Aligns text to the right */
+    list-style-position: inside; /* Ensures bullets stay aligned with text */
+}
+
+.rtl-list li {
+    margin-bottom: 15px; /* Adds spacing between list items */
+    line-height: 1.5; /* Increases space between lines inside each bullet */
+}
+
+/* for vocab colums */
+.three-columns {
+    display: flex;
+    justify-content:space-between; /* Centers all columns */
+    gap: 20px; /* Adds spacing */
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    direction: rtl;
+}
+.three-columns div {
+    flex: 1; /* Ensures equal width */
+}
+
+
+/* לשיחה */
+.two-columns {
+    display: flex;
+    flex-direction: row-reverse; /* Right to Left for Hebrew text */
+    justify-content: flex-start; /* Align the columns to the left */
+    gap: 05px; /* Adds space between the two columns */
+    padding-right: 40px; /* Moves columns further to the left */
+}
+
+.column {
+    width: 45%; /* Adjust the width of each column */
+    padding-top: 20px; /* Adds space above the rows inside each column */
+}
+
+ul {
+    direction: rtl;
+    list-style-position:outside; /* Ensures bullets are inside the box */
+    padding-right: 50px; /* Moves the bullet points closer to the text */
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.8; /* Adds space between rows */
+}
+
+/* אתגר */
+.inner-box {
+    border: 2px solid #333;  /* Border color */
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: auto;  /* Align to the right */
+    margin-right: 60px;   /* Ensure it doesn't shift further left */
+    width: 30%;         /* Optional: Adjust width of the inner box */
+    border-radius: 10px;  /* Optional: rounded corners */
+    text-align: right;  /* RTL alignment */     
+}
